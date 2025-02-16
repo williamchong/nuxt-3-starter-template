@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   modules: [
     'nuxt-gtag',
     '@nuxt/eslint',
+    '@nuxt/test-utils/module',
     '@nuxtjs/i18n',
     '@nuxtjs/sitemap',
     '@nuxtjs/tailwindcss',
