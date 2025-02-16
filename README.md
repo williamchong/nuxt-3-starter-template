@@ -1,10 +1,28 @@
-# Nuxt Minimal Starter
+# Nuxt 3 Starter Template
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A pre-configured Nuxt 3 starter template with essential features.
+
+## Features
+
+- 🌍 i18n Internationalization
+- 📱 TailwindCSS Integration
+- 🔍 SEO Optimization & Sitemap
+- 📊 Google Analytics Setup
+- ✅ Testing Tools (Vitest)
+- 🔧 ESLint Code Quality
+
+## Integrated Modules
+
+| Module                                                            | Description                                              |
+| ----------------------------------------------------------------- | -------------------------------------------------------- |
+| [@nuxtjs/i18n](https://i18n.nuxtjs.org/)                          | Internationalization support for your Nuxt application   |
+| [@nuxtjs/tailwindcss](https://tailwindcss.nuxtjs.org/)            | TailwindCSS integration with zero configuration          |
+| [@nuxtjs/sitemap](https://sitemap.nuxtjs.org/)                    | Automatically generate sitemap for your Nuxt application |
+| [nuxt-gtag](https://nuxt.com/modules/gtag)                        | Google Analytics 4 integration                           |
+| [@nuxt/test-utils](https://nuxt.com/docs/getting-started/testing) | Official testing utilities for Nuxt applications         |
+| [@nuxt/eslint](https://eslint.nuxt.com/)                          | Official ESLint configuration and tooling                |
 
 ## Setup
-
-Make sure to install dependencies:
 
 ```bash
 # npm
@@ -20,7 +38,7 @@ yarn install
 bun install
 ```
 
-## Development Server
+## Development
 
 Start the development server on `http://localhost:3000`:
 
@@ -56,7 +74,7 @@ yarn build
 bun run build
 ```
 
-Locally preview production build:
+Preview the production build:
 
 ```bash
 # npm
@@ -72,4 +90,55 @@ yarn preview
 bun run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Testing
+
+Run unit tests:
+
+```bash
+# npm
+npm run test
+
+# pnpm
+pnpm test
+
+# yarn
+yarn test
+
+# bun
+bun run test
+```
+
+## Configuration Guide
+
+### Google Analytics
+
+Configure your GA tracking ID in `nuxt.config.ts`:
+
+```ts
+gtag: {
+  id: "YOUR-GA-ID";
+}
+```
+
+### i18n Localization
+
+English is supported by default. Add more languages in `nuxt.config.ts`:
+
+```ts
+i18n: {
+  locales: [
+    {
+      code: "en",
+      language: "en-US",
+      file: "en-US.json",
+    },
+    // Add more languages...
+  ];
+}
+```
+
+For more information:
+
+- [Nuxt 3 Documentation](https://nuxt.com/docs)
+- [Nuxt i18n](https://i18n.nuxtjs.org/)
+- [Nuxt TailwindCSS](https://tailwindcss.nuxtjs.org/)
