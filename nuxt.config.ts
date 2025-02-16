@@ -1,11 +1,15 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
+    'nuxt-gtag',
     '@nuxt/eslint',
     '@nuxtjs/i18n',
     '@nuxtjs/sitemap',
     '@nuxtjs/tailwindcss',
   ],
+  gtag: {
+    id: undefined,
+  },
   i18n: {
     locales: [
       {
