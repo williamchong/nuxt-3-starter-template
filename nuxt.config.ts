@@ -15,6 +15,7 @@ export default defineNuxtConfig({
       },
     ],
     defaultLocale: 'en',
+    lazy: true,
   },
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true }
